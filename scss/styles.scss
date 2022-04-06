@@ -51,7 +51,7 @@ main {
 }
 
 .type {
-    margin: .75rem 1.5rem;
+    margin: 1.5rem;
     padding: 1.5rem;
     border-radius: .3rem;
     height: 14rem;
@@ -93,7 +93,49 @@ main {
 
 
 
+@media only screen and (min-width: 1440px ) {
+	main {
+        width: 85rem;
 
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        p {
+            width: 32rem;
+        }
+    }
+
+    .types {
+        width:65rem;
+        height: 31rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-content: center;
+
+        .type {
+            width: 20rem;
+            margin: 0rem;
+
+            &:nth-of-type(1) {
+                position: relative;
+                top: 8rem;
+            }
+
+            &:nth-of-type(3) {
+                grid-column: 2;
+            }
+
+            &:nth-of-type(4) {
+                position: relative;
+                top: -7.5rem;
+            }
+        }
+
+    }
+}
 
 
 
