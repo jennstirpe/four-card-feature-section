@@ -33,12 +33,13 @@ main {
     align-items: center;
     margin-top: 10%;
 
-    h2:nth-of-type(1) {
+    h1 {
         color: $dark-blue;
         font-weight: 200;
+        font-size: 1.5rem;
     }
 
-    h2:nth-of-type(2) {
+    h2 {
         color: $dark-blue;
     }
 
@@ -101,6 +102,10 @@ main {
 	main {
         width: 85rem;
         margin-top: 0;
+
+        h1 {
+            font-size: 2.25rem;
+        }
 
         h2 {
             font-size: 2.25rem;
